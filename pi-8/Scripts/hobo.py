@@ -26,8 +26,6 @@ reobj = re.compile("\A"+ name + "_hobo")
 file = [f for f in all_filenames if reobj.match(f)][0]
 hobo = pd.read_csv(file)
 print(file)
-
-print(hobo.head())
 if name == 'kullum':
     hobo = hobo.fillna(0)
     i=1
