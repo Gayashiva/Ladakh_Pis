@@ -10,7 +10,8 @@ f = open("/etc/hostname")
 hostname = f.read().strip().replace(" ", "")
 f.close()
 
-path = "/home/pi/AWS/Data/"
+# path = "/home/pi/AWS/Data/"
+path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "/Data/"
 # path = "/home/surya/AWS/pi-0/Data/"
 file_path = os.path.join(path[:-5], hostname + "_outputs.pdf")
 
