@@ -21,3 +21,4 @@
 8. sudo apt-get -y remove fake-hwclock && sudo update-rc.d -f fake-hwclock remove && sudo systemctl disable fake-hwclock
 9. sudo cp /home/pi/Setup/hwclock-set /lib/udev
 10. sudo hwclock -w && sudo hwclock -r
+11. chmod +x \*.py
